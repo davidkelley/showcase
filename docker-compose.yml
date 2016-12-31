@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.development
+    command: puma
+    env_file: .env
+    environment:
+      PORT: 2345
+      RACK_ENV: development
+    ports:
+      - "2345:2345"
+    volumes:
+      - /mnt/github.com/davidkelley/showcase:/app
