@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.development
-    command: puma
+    command: /bin/sh -c "bundle exec guard -ip -l 0.4 & puma"
     env_file: .env
     environment:
       PORT: 2345

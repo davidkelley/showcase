@@ -1,5 +1,5 @@
 group :api do
-  guard 'pow' do
+  guard 'pow', daemon: true do
     watch(%r{^config/.*\.rb$})
     watch(%r{^lib/.*\.rb$})
     watch(%r{^system/.*\.rb$})
