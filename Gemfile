@@ -15,7 +15,17 @@ group :default do
 
   gem 'rack-cors', '~> 0.4'
 
+  gem 'roda', '~> 2.21'
+
   gem 'yajl-ruby', '1.2.1', require: 'yajl'
+end
+
+group :development do
+  gem 'guard'
+
+  gem 'guard-pow', require: false
+  
+  gem 'guard-rspec', '~> 4.7'
 end
 
 group :test do

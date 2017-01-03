@@ -1,0 +1,7 @@
+restart.txt
+tmp
+Gemfile.lock
+.DS_Store
+bin
+.binstubs
+coverage
