@@ -1,6 +1,12 @@
 version: '2'
 
 services:
+  db:
+    image: tutum/mysql
+    environment:
+      ON_CREATE_DB: app
+      MYSQL_USER: root
+      MYSQL_PASS: password
   app:
     build:
       context: .
@@ -10,7 +16,10 @@ services:
     environment:
       PORT: 2345
       RACK_ENV: development
+      DATABASE_CONNECTION: "mysql2://root:password@db:3306/app"
     ports:
       - "2345:2345"
     volumes:
       - /mnt/github.com/davidkelley/showcase:/app
+    links:
+      - db

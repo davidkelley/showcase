@@ -7,5 +7,3 @@ preload_app!
 rackup DefaultRackup
 
 port ENV['PORT']
-
-# on_worker_boot {  }

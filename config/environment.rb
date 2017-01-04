@@ -3,6 +3,7 @@ ENV['RACK_ENV'] ||= 'development'
 require 'rubygems'
 require 'bundler/setup'
 require 'yajl/json_gem'
+require 'rom-repository'
 
 Bundler.require :default, ENV['RACK_ENV']
 

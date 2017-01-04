@@ -2,4 +2,4 @@ FROM davidkelley/base:ruby
 
 ADD ./ $MOUNT_PATH
 
-RUN bundle install --without test
+RUN bundle install --without test development
