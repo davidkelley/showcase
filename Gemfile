@@ -25,17 +25,17 @@ group :default do
 
   gem 'rom-sql', '~> 0.9'
 
-  gem 'yajl-ruby', '1.2.1', require: 'yajl'
+  gem 'yajl-ruby', '1.3.1'
 end
 
 group :development do
-  gem 'guard', '~> 2.14'
+  gem 'guard', '~> 2.14', '>= 2.14.0'
 
-  gem 'guard-pow', '~> 2.0', require: false
+  gem 'guard-pow', '~> 2.0', '>= 2.0.0', require: false
 
-  gem 'guard-rspec', '~> 4.7'
+  gem 'guard-rspec', '~> 4.7', '>= 4.7.3'
 
-  gem 'guard-rubocop', '~> 1.2'
+  gem 'guard-rubocop', '~> 1.2', '>= 1.2.0'
 
   gem 'rake'
 
@@ -55,5 +55,5 @@ group :test do
 
   gem 'rspec', '~> 3.1'
 
-  gem 'rubocop', '~> 0.46'
+  gem 'rubocop', '~> 0.49', '>= 0.49.0'
 end
