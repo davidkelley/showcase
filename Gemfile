@@ -17,7 +17,7 @@ group :default do
 
   gem 'rack', '~> 2.0'
 
-  gem 'rack-cors', '~> 0.4'
+  gem 'rack-cors', '~> 0.4', '>= 0.4.1'
 
   gem 'roda', '~> 2.21'
 
